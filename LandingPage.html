@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vishal Markad | Landing Page</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+    /* GLOBAL STYLES */
+    :root {
+        --primary-blue: #38bdf8;
+        --secondary-blue: #0ea5e9;
+        --bg-dark: #0f172a;
+        --card-bg: rgba(30, 41, 59, 0.7);
+        --text-main: #f8fafc;
+        --text-dim: #94a3b8;
+    }
+
+    body {
+        margin: 0;
+        font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+        background: radial-gradient(circle at top right, #1e293b, #0f172a);
+        color: var(--text-main);
+        line-height: 1.6;
+    }
+
+    /* HEADER */
+    header {
+        text-align: center;
+        padding: 80px 20px 40px;
+        background: linear-gradient(180deg, rgba(56, 189, 248, 0.05) 0%, rgba(15, 23, 42, 0) 100%);
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 3rem;
+        font-weight: 800;
+        letter-spacing: -1px;
+        background: linear-gradient(to right, #fff, #38bdf8);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    header p {
+        color: var(--text-dim);
+        font-size: 1.1rem;
+        margin: 12px 0 25px;
+        font-weight: 300;
+    }
+
+    /* SOCIAL */
+    .social-icons a {
+        color: var(--text-main);
+        margin: 0 12px;
+        font-size: 24px;
+        transition: all 0.3s ease;
+        opacity: 0.7;
+    }
+
+    .social-icons a:hover {
+        color: var(--primary-blue);
+        opacity: 1;
+        transform: translateY(-3px);
+    }
+
+    /* SECTION & CONTAINER */
+    section {
+        padding: 20px 20px;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    /* HEADINGS */
+    h2 {
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+        color: var(--primary-blue);
+        display: flex;
+        align-items: center;
+    }
+
+    h2::after {
+        content: "";
+        height: 1px;
+        flex-grow: 1;
+        background: linear-gradient(to right, rgba(56, 189, 248, 0.5), transparent);
+        margin-left: 15px;
+    }
+
+    h3 {
+        color: var(--primary-blue);
+        margin-top: 0;
+    }
+
+    /* CARD STYLE */
+    .card {
+        background: var(--card-bg);
+        padding: 25px;
+        border-radius: 16px;
+        margin-bottom: 30px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+        border: 1px solid rgba(56, 189, 248, 0.3);
+    }
+
+    /* SKILLS */
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    .skills span {
+        background: rgba(56, 189, 248, 0.1);
+        color: var(--primary-blue);
+        padding: 8px 18px;
+        border-radius: 50px;
+        border: 1px solid rgba(56, 189, 248, 0.2);
+        font-size: 13px;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    .skills span:hover {
+        background: var(--primary-blue);
+        color: var(--bg-dark);
+    }
+
+    /* LISTS */
+    ul {
+        padding-left: 20px;
+        margin: 0;
+    }
+
+    ul li {
+        margin-bottom: 8px;
+        color: var(--text-dim);
+    }
+
+    /* BUTTON */
+    .resume {
+        text-align: center;
+        padding: 40px 0;
+    }
+
+    .resume a {
+        display: inline-block;
+        padding: 14px 30px;
+        background: var(--primary-blue);
+        color: var(--bg-dark);
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 700;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
+    }
+
+    .resume a:hover {
+        transform: scale(1.05);
+        background: #fff;
+        box-shadow: 0 6px 20px rgba(56, 189, 248, 0.5);
+    }
+
+    /* FOOTER */
+    footer {
+        text-align: center;
+        padding: 60px 20px;
+        color: var(--text-dim);
+        font-size: 0.9rem;
+    }
+
+    /* DECORATION */
+    strong {
+        color: var(--text-main);
+    }
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Vishal Birmal Markad</h1>
+    <p>Web Developer | Data Analysis Enthusiast</p>
+
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/vishal-markad-7bbbab255/?skipRedirect=true" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="#">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+</header>
+
+<section class="container">
+    <h2>Career Objective</h2>
+    <div class="card">
+        <p>
+            To become a successful person by gaining knowledge from an esteemed organization 
+            and seeking a challenging career that utilizes my skills and enhances my knowledge.
+        </p>
+    </div>
+</section>
+
+<section class="container">
+    <h2>Working Interest Area</h2>
+    <div class="card">
+        <ul>
+            <li>Data Analysis</li>
+            <li>Web Development</li>
+            <li>Data Management</li>
+        </ul>
+    </div>
+</section>
+
+<section class="container">
+    <h2>Skills</h2>
+    <div class="skills">
+        <span>C</span>
+        <span>HTML</span>
+        <span>JavaScript</span>
+        <span>DSA</span>
+        <span>MS-CIT</span>
+        <span>Typing</span>
+    </div>
+</section>
+
+<section class="container">
+    <h2>Project</h2>
+    <div class="card">
+        <h3>Online Pet Care Center</h3>
+        <p>
+            Developed a web-based application for pet care, adoption, and health management.
+        </p>
+        <p><strong>Technologies:</strong> HTML, CSS, JavaScript, MySQL</p>
+        <ul>
+            <li>User login & registration</li>
+            <li>Pet adoption platform</li>
+            <li>Admin panel</li>
+            <li>Pet food ordering system</li>
+        </ul>
+    </div>
+</section>
+
+<section class="container">
+    <h2>Education</h2>
+    <div class="card">
+        <ul>
+            <li>M.Sc. Computer Science (Pursuing)</li>
+            <li>B.Sc Computer Science – SGPA: 8.01</li>
+            <li>HSC – 58%</li>
+            <li>SSC – 83.60%</li>
+        </ul>
+    </div>
+</section>
+
+<section class="container">
+    <h2>Contact Information</h2>
+    <div class="card">
+        <p><strong>Phone:</strong> +91 7350766059</p>
+        <p><strong>Email:</strong> vishalmarkad76@gmail.com</p>
+        <p><strong>Location:</strong> Pune, Maharashtra</p>
+        <p><strong>Languages:</strong> Marathi, Hindi, English</p>
+    </div>
+</section>
+
+<section class="container resume">
+    <a href="VishalMarkadCV.pdf" download>
+        <i class="fas fa-download"></i> Download Full Resume
+    </a>
+</section>
+
+<footer>
+    <p>© 2026 Vishal Markad • Built with passion</p>
+</footer>
+
+</body>
+</html>
